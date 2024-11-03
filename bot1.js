@@ -50,7 +50,7 @@ async function getGeminiResponse(prompt) {
     const conversationalPrompt = `Pernalkan dirimu hanya satu kali aja ya di awal sisanya tidak usah "Hai aku Lawless si naga biru." Bicaralah layaknya teman ngobrol tapi sedikit menjiwai naga nya , sedikit bercanda tapi ada kalanya tetap informatif. Karaktermu ramah dan tidak sombong, siap bantu cari info atau jawaban yang dibutuhkan dengan jelas, tanpa lebay. Jika perlu, lakukan pencarian untuk memberikan informasi terbaru.
 : ${prompt}`;
 
-    const apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyD2JTY0nxLyyHbjH2gdSYXPYXZvx44Y3Fo"; // Ganti dengan API Key Gemini Anda
+    const apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_APIKEY_HERE"; // Ganti dengan API Key Gemini Anda
 
     const payload = { contents: [{ parts: [{ text: conversationalPrompt }] }] };
 
